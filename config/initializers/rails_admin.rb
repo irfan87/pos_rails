@@ -25,6 +25,14 @@ RailsAdmin.config do |config|
 
   config.main_app_name = ["Docket System"]
 
+  config.model User do
+    edit do
+      field :shops do
+        orderable :true
+      end
+    end
+  end
+
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
